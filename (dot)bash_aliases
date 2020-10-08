@@ -1,34 +1,34 @@
 # File Systems
-alias .. = "cd .."
-alias ... = "cd ../.."
-alias ls = "ls --color=auto"
-alias ll = "ls -l"
-alias lla = "ls -la"
-alias mv = "mv -i"
-alias cp = "cp -i"
-alias ln = "ln -i"
-alias rm = "rm -I --preserve-root"
-alias mkdir = "mkdir -pv"
-alias mkcd = "_(){ mkdir $1; cd $1; }; _"
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ls='ls --colo='to'
+alias ll='ls -l'
+alias lla='ls -la'
+alias mv='mv -i'
+alias cp='cp -i'
+alias ln='ln -i'
+alias rm='rm -I --preserve-root'
+alias mkdir='mkdir -pv'
+alias mkcd='_(){ mkdir $1; cd $1; }; _'
 
 # Utilities
-alias h = "history"
-alias j = "jobs -l"
-alias c = "clear"
-alias q = "exit"
-alias o = "xdg-open"
-alias hc = "h -c; c"
-alias df = "df -H"
-alias du = "du -ch"
-alias now = "date +"%T""
-alias path = "echo -e ${PATH//:/\\n}"
-alias sai = "sudo apt install"
-alias cln = "sudo apt autoclean; sudo apt autoremove; sudo apt clean"
-alias upd = "sudo apt update; sudo apt upgrade -y; sudo apt dist-upgrade -y"
+alias h='history'
+alias j='jobs -l'
+alias c='clear'
+alias q='exit'
+alias o='xdg-open'
+alias hc='h -c; c'
+alias df='df -H'
+alias du='du -ch'
+alias now='date +'%T'
+alias path='echo -e ${PATH//:/\\n}'
+alias sai='sudo apt install'
+alias cln='sudo apt autoclean; sudo apt autoremove; sudo apt clean'
+alias upd='sudo apt update; sudo apt upgrade -y; sudo apt dist-upgrade -y'
 
 # Git
-alias gs = "git status -sb"
-alias gi = "git init"
-alias ga = "git add"
-alias gc = "git commit"
-alias gp = "git push"
+alias gs='git status -sb'
+alias gi='git init'
+alias ga='git add'
+alias gc='git commit'
+alias gp='git push'
