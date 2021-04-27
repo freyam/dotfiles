@@ -21,7 +21,7 @@ alias du='du -ch'
 alias sai='sudo apt-fast install -y'
 alias sar='sudo apt-fast remove -y'
 alias cln='sudo apt-fast -y autoclean; sudo apt-fast -y autoremove; sudo apt-fast -y clean'
-alias upd='sudo apt-fast update -y; sudo apt-fast upgrade -y; sudo apt-fast dist-upgrade -y; cln'
+alias upd='sudo apt-fast update -y; sudo apt-fast upgrade -y --allow-downgrades; sudo apt-fast dist-upgrade -y; cln'
 
 alias cpushow='cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor'
 alias cpuhigh='echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor'
@@ -30,6 +30,8 @@ alias cpulow='echo powersave | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/sca
 bk() {
 	cp -a "$1" "${1}_$(date --iso-8601=seconds)"
 }
+
+alias vpn='cd /home/freyam/Documents/vpn; openvpn --config iiit-ubuntu.ovpn'
 
 extract() {
 	if [ -f $1 ] ; then
